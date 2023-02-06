@@ -18,7 +18,7 @@
 </head>
 
 <body class="h-full bg-gradient-to-b  from-gray-50 to-amber-100 bg-no-repeat bg-fixed">
-    <div class=" lg:h-full lg:flex flex-wrap ">
+    <div class=" lg:h-full lg:flex flex-wrap {{ Request::is('about') ? ' gap-32' : '' }}">
         <nav class=" md:static relative border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 w-full">
             <div class="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="/" class="mt-2 ml-4 bg">

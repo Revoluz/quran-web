@@ -22,10 +22,17 @@
                                 <div
                                     class="text-white md:pl-7 pl-2 flex flex-col justify-center md:max-w-auto lg:max-w-none max-w-[200px]">
                                     <h5 class=" block font-bold  text-base font-jktsans">{{ $asmaulhusna->latin }}</h5>
-                                    <h6
-                                        class="  font-medium md:text-sm text-xs md:block hidden  font-jktsans color md:max-w-auto max-w-[200px] ">
-                                        {{ $asmaulhusna->arti }}
-                                    </h6>
+                                    @if ($asmaulhusna->urutan == 12)
+                                        <h6
+                                            class=" md:block hidden font-medium  text-sm   md:max-w-[250px] max-w-[180px] font-jktsans color">
+                                            {{ $asmaulhusna->arti }}
+                                        </h6>
+                                    @else
+                                        <h6
+                                            class=" md:block hidden font-medium md:text-sm text-xs lg:max-w-none md:max-w-auto max-w-[180px]  font-jktsans color">
+                                            {{ $asmaulhusna->arti }}
+                                        </h6>
+                                    @endif
                                 </div>
                             </div>
                             <div class="flex items-center mr-11 font-light">
@@ -57,7 +64,7 @@
                             </div>
                             <div class="text-white md:pl-7 pl-2 flex flex-col justify-center ">
                                 <h5 class=" block font-bold text-base font-jktsans">{{ $asmaulhusna->latin }}</h5>
-                                @if ($asmaulhusna->urutan == 85)
+                                @if ($asmaulhusna->urutan == 85 || $asmaulhusna->urutan == 57)
                                     <h6
                                         class=" md:block hidden font-medium  text-sm   md:max-w-[250px] max-w-[180px] font-jktsans color">
                                         {{ $asmaulhusna->arti }}

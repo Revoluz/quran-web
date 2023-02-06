@@ -1,6 +1,6 @@
-@extends('layout.navbar')
+@extends('layout.navbar'),
 @section('content')
-    <div class="flex md:px-20 px-6 justify-around w-full items-center h-1/2 lg:flex-nowrap flex-wrap mt-12 pb-12">
+    <div class="flex md:px-20 px-6 justify-around w-full items-center h-1/2 lg:flex-nowrap flex-wrap pb-12">
         <div>
             <svg class=" lg:min-w-[450px] min-w-[300px]" viewBox="0 0 413 413" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -69,19 +69,30 @@
         </div>
         <div class=" lg:ml-12 mt-12">
             <h1 class=" font-trocchi lg:text-5xl text-3xl text-center lg:text-left">About Al-Quran Pro</h1>
-            <p class=" font-jktsans font-medium md:text-lg text-base max-w-4xl mt-3 text-justify">Lorem ipsum dolor sit
-                amet
-                consectetur,
-                adipisicing
-                elit.
-                Repellat
-                eum suscipit
-                accusamus vitae beatae in
-                molestias fugit ratione natus! Fugiat facilis deleniti harum omnis ab odit quasi ducimus pariatur
-                asperiores!Voluptas, dolores neque quo sequi quibusdam omnis. Dolorum, dolore esse laudantium similique quia
-                eum ducimus labore tempora, provident explicabo aspernatur perspiciatis error quaerat. Asperiores natus
-                earum laborum, ad esse optio!
+            <p class=" font-jktsans font-medium md:text-lg text-base max-w-4xl mt-3 text-justify">
+                Website Al-Qur'an ini merupakan Mushaf Al-Qur'an digital yang dirancang oleh 2 orang, dan website ini dibuat
+                untuk mengerjakan projek yang diberikkan oleh guru kita dalam berbentuk website yang bisa diakses
+                dimana-mana. Ayat Al-Qur'an dalam web ini menggunakan (API) resmi dari quran kemenag, di website ini juga
+                tersedia nama-nama Allah (Asmaul Husna) lengkap dengan tulisan arabnya dan latinya. Selain teks Al-Qur'an
+                lengkap sampai 30 juz ini juga dilengkapi audio murottal untuk didengarkan oleh pengguna.
             </p>
         </div>
+    </div>
+    <div class="w-full"><svg class=" lg:w-full min-w-[1440px] "viewBox="0 0 1440 288" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 0L60 48C120 96 240 192 360 192C480 192 600 96 720 90C840 84 960 168 1080 186C1200 204 1320 156 1380 132L1440 108V288H1380C1320 288 1200 288 1080 288C960 288 840 288 720 288C600 288 480 288 360 288C240 288 120 288 60 288H0V0Z"
+                fill="url(#paint0_linear_132_668)" fill-opacity="0.9" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 129.351H60C120 129.351 240 129.351 360 149.182C480 169.013 600 208.675 720 182.234C840 155.792 960 63.2466 1080 36.805C1200 10.3635 1320 50.0258 1380 69.857L1440 89.6882V288H1380C1320 288 1200 288 1080 288C960 288 840 288 720 288C600 288 480 288 360 288C240 288 120 288 60 288H0V129.351Z"
+                fill="#FFE200" fill-opacity="0.55" />
+            <defs>
+                <linearGradient id="paint0_linear_132_668" x1="0" y1="0" x2="1292.73" y2="603.474"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#02762F" />
+                    <stop offset="0.779523" stop-color="#22C55E" />
+                </linearGradient>
+            </defs>
+        </svg>
     </div>
 @endsection
