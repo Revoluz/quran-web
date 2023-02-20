@@ -48,17 +48,17 @@
                 <div class="md:static  relative  items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                     id="navbar-cta">
                     <ul
-                        class=" md:static absolute w-full flex flex-col p-4 mt-4 border align-middle border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
+                        class=" md:static absolute w-full md:flex flex-col p-4 mt-4 items-start md:items-center border align-middle border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li class="h-auto md:h-fit">
                             <a href="/"
                                 class=" font-jktsans  test block py-2 pl-3 pr-4 hover:bg-green-500 hover:text-white rounded  md:hover:bg-transparent md:hover:text-green-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700  {{ Request::is('/') ? 'text-green-600 font-bold text-lg' : 'font-semibold md:text-gray-700 text-base' }}"
                                 aria-current="page">Home</a>
                         </li>
-                        <li>
+                        <li class="h-auto md:h-fit">
                             <a href="/al-quran"
                                 class="font-jktsans  test block py-2 pl-3 pr-4 hover:bg-green-500 hover:text-white rounded  md:hover:bg-transparent md:hover:text-green-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {{ Request::is('al-quran*') ? 'text-green-600 font-bold text-lg' : 'font-semibold md:text-gray-700 text-base' }}">Al-Quran</a>
                         </li>
-                        <li>
+                        <li class="h-auto md:h-fit">
                             <a href="/asmaul-husna"
                                 class="font-jktsans  test block py-2 pl-3 pr-4 hover:bg-green-500 hover:text-white rounded  md:hover:bg-transparent md:hover:text-green-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {{ Request::is('asmaul-husna') ? 'text-green-600 font-bold text-lg' : 'font-semibold md:text-gray-700 text-base' }}">Asmaul
                                 Husna</a>
@@ -70,6 +70,31 @@
 
         @yield('content')
     </div>
+    <!-- Implement the Back Top Top Button -->
+    <button id="to-top-button" onclick="goToTop()" title="Go To Top"
+        class="hidden fixed z-90 md:bottom-8 bottom-28 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-500 text-white text-3xl font-bold">&uarr;</button>
+
+    <!-- Javascript code -->
+    <script>
+        var toTopButton = document.getElementById("to-top-button");
+
+        // When the user scrolls down 200px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        }
+
+        // When the user clicks on the button, smoothy scroll to the top of the document
+        function goToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -85,11 +85,37 @@
                                     class="h-full block ">{{ $ayat->nomor }}.</span class="text-sm md:text-base">
                                 {{ $ayat->idn }}</p>
                         </div>
-
                     </div>
                     <hr class=" border-spacing-1 bg-slate-800 border-slate-800 ">
                 </div>
             @endforeach
+            <div class="flex justify-evenly mt-7">
+                @if ($surah->nomor != 1)
+                    <a href="/al-quran/{{ $surah->surat_sebelumnya->nomor }}"><button type="button"
+                            class="text-white bg-gradient-to-r from-green-600 via-green-500 to-green-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded lg:text-sm md:text-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-40 md:w-48 md:h-14">
+                            <h2 class=" font-jktsans font-bold font  text-lg"><span class=" pr-2 text-lg">🡰</span>
+                                {{ $surah->surat_sebelumnya->nama_latin }}
+                            </h2>
+                        </button></a>
+                @else
+                @endif
+                {{-- @foreach ($surah->surat_sebelumnya as $surat_sebelumnya) --}}
+                {{-- <a href="/al-quran/{{ $surah->surat_sebelumnya->nomor }}"><button type="button"
+                        class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded lg:text-sm md:text-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-40 md:w-48 md:h-14">Surat
+                        Sebelumnya</button></a> --}}
+                {{-- @endforeach --}}
+                @if ($surah->nomor != 114)
+                    <a href="/al-quran/{{ $surah->surat_selanjutnya->nomor }}"><button type="button"
+                            class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded lg:text-sm md:text-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-40 md:w-48 md:h-14">
+                            <h2 class=" font-jktsans font-bold font  text-lg">
+                                {{ $surah->surat_selanjutnya->nama_latin }}<span class=" pl-2 text-lg">🡲</span>
+                            </h2>
+                        </button></a>
+                @else
+                @endif
+
+            </div>
         </div>
+
     </div>
 @endsection
