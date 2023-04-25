@@ -3,12 +3,32 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.5.2" }
     },
+    "builds": [
+        {
+            "src": "composer.json",
+            "use": "@vercel/php",
+            "config": {
+                "maxLambdaSize": "30mb"
+            },
+            "env": {
+                "COMPOSER_CACHE_DIR": "/tmp/cache/composer"
+            },
+            "buildCommand": "composer install && npm run prod",
+            "output": [
+                {
+                    "src": "public/index.php",
+                    "dest": "/api/index.php"
+                }
+            ]
+        }
+    ],
     "routes": [
         {
             "src": "/(.*)",
             "dest": "/public/index.php"
         }
     ],
+
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
