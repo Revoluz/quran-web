@@ -7,9 +7,6 @@
             "config": {
                 "maxLambdaSize": "30mb"
             },
-            "env": {
-                "COMPOSER_CACHE_DIR": "/tmp/cache/composer"
-            },
             "buildCommand": "composer install && npm run prod",
             "output": [
                 {
