@@ -12,6 +12,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
+        "APP_KEY": "base64:DIuxNeIH4OLfOzgV14+SI+CDiiGFnztXwyFSRq41Vgw=",
         "APP_URL": "https://alquranpro.com",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
