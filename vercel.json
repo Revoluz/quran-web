@@ -7,7 +7,7 @@
             "config": {
                 "maxLambdaSize": "30mb"
             },
-            "buildCommand": "composer install && npm run prod",
+            "cmd": "composer install && npm run prod",
             "output": [
                 {
                     "src": "public/index.php",
