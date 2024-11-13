@@ -79,7 +79,7 @@
 
                         <div class="w-full">
                             <p
-                                class=" flex justify-end md:text-4xl text-3xl font-medium font-quran leading-12  pl-4 text-right">
+                                class=" flex mb-12 justify-end md:text-4xl text-3xl font-medium font-quran leading-12  pl-4 text-right">
                                 {{ $ayat->ar }} </p>
                             <p class=" md:pl-4 font-jktsans font-medium my-6 flex "><span
                                     class="h-full block ">{{ $ayat->nomor }}.</span class="text-sm md:text-base">
