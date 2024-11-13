@@ -1,12 +1,16 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "composer.json",
-            "use": "@vercel/php",
-        }
+    "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [
+        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
     ],
-
+    "public": true,
+    "buildCommand": "vite build",
+    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "false",
