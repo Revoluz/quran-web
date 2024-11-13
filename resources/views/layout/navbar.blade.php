@@ -13,6 +13,8 @@
         rel="stylesheet">
     <link rel="icon" href="{{ URL::asset('resources/img/logo.svg') }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/layout') }}" />
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 </head>

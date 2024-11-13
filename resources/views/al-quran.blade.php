@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="flex items-center mr-11">
-                                <p class=" font-medium text-2xl text-white font-quran hidden md:inline-block">
+                                <p class=" font-bold text-3xl text-white font-surah hidden md:inline-block">
                                     {{ $surah->nama }}</p>
                             </div>
                         </a>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="flex items-center mr-11 font-light">
-                            <p class=" font-medium text-2xl text-white font-quran hidden md:inline-block">
+                            <p class=" font-bold text-3xl text-white font-surah hidden md:inline-block">
                                 {{ $surah->nama }}</p>
                         </div>
                     </a>

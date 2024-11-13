@@ -11,7 +11,8 @@ module.exports = {
             fontFamily: {
                 jktsans: ["Plus Jakarta Sans"],
                 trocchi: ["Trocchi"],
-                quran: ["quran"],
+                quran: ["Amiri Quran"],
+                surah: ["Amiri"],
             },
             lineHeight: {
                 "extra-loose": "2.5",
