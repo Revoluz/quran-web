@@ -75,15 +75,15 @@
                 "Bacalah Alquran, maka sesungguhnya ia akan datang di hari kiamat memberi syafaat kepada pembacanya"
                 (HR. Imam Muslim)</p>
             <div class="flex lg:justify-start justify-center mt-12"><a href="/al-quran"><button type="button"
-                        class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded lg:text-sm md:text-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-40 md:w-48 md:h-14">Al-Quran</button></a>
+                        class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-bold rounded lg:text-base md:text-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-40 md:w-48 md:h-14 ">Al-Quran</button></a>
                 <a href="asmaul-husna"><button type="button"
-                        class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded lg:text-sm md:text-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-700 w-44 md:w-48 md:h-14 ">Asmaul
+                        class="text-green-700 hover:text-white border-2 border-green-700 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-bold rounded lg:text-base md:text-xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-700 dark:focus:ring-green-700 w-44 md:w-48 md:h-14 ">Asmaul
                         Husna</button>
                 </a>
             </div>
         </div>
         <div class=" flex justify-items-end  lg:basis-full justify-end items-end  w-auto">
-            <img class=' pl-5 w-7/12  mr-20 min-w-[340]  hidden lg:block' src="{{ URL::asset('/img/Al-quran.png ') }}"
+            <img class=' pl-5 w-7/12  mr-20 min-w-[340]  hidden lg:block' src="{{ URL::asset('/resources/img/Al-quran.png ') }}"
                 alt="">
             {{-- max-w-sm  --}}
         </div>

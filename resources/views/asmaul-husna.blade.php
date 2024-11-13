@@ -2,7 +2,7 @@
 @section('content')
     <div class=" w-full pb-14  mt-28">
         <div class=" flex justify-center ">
-            <h1 class=" font-quran font-medium md:text-8xl text-6xl mx-auto -"> الْأَسْمَاءُ الْحُسْنَى</h1>
+            <h1 class=" font-surah font-medium md:text-8xl text-6xl mx-auto -"> الْأَسْمَاءُ الْحُسْنَى</h1>
         </div>
         <div class="flex mt-16 lg:flex-nowrap flex-wrap ">
             <div class="grow w-full">
@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <div class="flex items-center mr-11 font-light">
-                                <p class=" font-medium md:text-4xl lg:text-2xl text-2xl text-white font-quran">
+                                <p class="font-medium md:text-4xl lg:text-3xl text-3xl text-white font-surah">
                                     {{ $asmaulhusna->arab }}
                                 </p>
                             </div>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div class="flex items-center mr-11 font-light">
-                            <p class=" font-medium text-2xl text-white font-quran">{{ $asmaulhusna->arab }}</p>
+                            <p class="font-medium md:text-4xl lg:text-3xl text-3xl text-white font-surah">{{ $asmaulhusna->arab }}</p>
                         </div>
                     </div>
                 </div>
