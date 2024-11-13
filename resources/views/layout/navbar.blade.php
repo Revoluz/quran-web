@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Al-quran pro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Trocchi&display=swap"
         rel="stylesheet">
     <link rel="icon" href="{{ URL::asset('resources/img/logo.svg') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/css/layout') }}" />
+    <link rel="stylesheet" href="{{ URL::asset('/build/assets/app-c2dba899.css') }}" />
 <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
@@ -77,7 +78,10 @@
         class="hidden fixed z-90 md:bottom-8 bottom-28 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-green-500 text-white text-3xl font-bold">&uarr;</button>
 
     <!-- Javascript code -->
+    <script src="{{ asset('build/assets/app-315b0fc3.js') }}"></script>
+
     <script>
+
         var toTopButton = document.getElementById("to-top-button");
 
         // When the user scrolls down 200px from the top of the document, show the button
