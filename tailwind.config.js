@@ -13,6 +13,9 @@ module.exports = {
                 trocchi: ["Trocchi"],
                 quran: ["Amiri Quran"],
                 surah: ["Amiri"],
+                // custom font declaration tailwindcss
+                // quran: ["'Al Qalam Quran Majeed'"],
+                // surah: ["'Al Qalam Quran Majeed'"],
             },
             lineHeight: {
                 "extra-loose": "2.5",

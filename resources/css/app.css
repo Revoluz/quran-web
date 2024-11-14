@@ -4,10 +4,12 @@
 
 @layer base {
     @font-face {
-        font-family: 'Quran';
-            font-style: normal;
+        font-family: 'Al Qalam Quran Majeed';
+            font-style: regular;
     font-weight: 400;
+    /* @ is alias on vite.config.js */
+    /* custom font declaration tailwindcss */
     font-display: swap;
-        src: url(/resources/font/AlQalamQuranMajeed.ttf) format('ttf');
+        src: local('Al Qalam Quran Majeed'),url(@/resources/font/AlQalamQuranMajeed.ttf) format('truetype');
     }
 }

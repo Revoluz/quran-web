@@ -1,4 +1,4 @@
-@extends('layout.navbar'),
+@extends('layout.navbar')
 @section('content')
     <div class="flex md:px-20 px-6 justify-around w-full items-center h-1/2 lg:flex-nowrap flex-wrap pb-12">
         <div>

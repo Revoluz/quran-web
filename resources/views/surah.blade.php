@@ -64,8 +64,8 @@
         </div>
         <div>
             <div id="bismillah"
-                class=" text-center arabic font-base text-5xl mx-auto mt-11 {{ Request::is('al-quran/9', 'al-quran/1') ? 'hidden' : '' }}">
-                <h2 class=" font-quran">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h2>
+                class=" text-center arabic font-base md:text-5xl text-3xl mx-auto mt-11 {{ Request::is('al-quran/9', 'al-quran/1') ? 'hidden' : '' }}">
+                <h2 class=" font-quran">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ </h2>
             </div>
             @foreach ($surah->ayat as $ayat)
                 <div class=" lg:mx-44 md:mx-20 mx-4  mt-12">
@@ -79,7 +79,7 @@
 
                         <div class="w-full">
                             <p
-                                class=" flex mb-12 justify-end md:text-4xl text-3xl font-medium font-quran leading-12  pl-4 text-right">
+                                class=" flex mb-12 justify-end lg:leading-[5rem] lg:text-4xl leading-[5rem] text-3xl font-medium font-quran   pl-4 text-right">
                                 {{ $ayat->ar }} </p>
                             <p class=" md:pl-4 font-jktsans font-medium my-6 flex "><span
                                     class="h-full block ">{{ $ayat->nomor }}.</span class="text-sm md:text-base">
